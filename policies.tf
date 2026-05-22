@@ -433,7 +433,8 @@ data "aws_iam_policy_document" "load_balancer_controller" {
       "elasticloadbalancing:DescribeTargetGroupAttributes",
       "elasticloadbalancing:DescribeTargetHealth",
       "elasticloadbalancing:DescribeTags",
-      "elasticloadbalancing:DescribeListenerAttributes"
+      "elasticloadbalancing:DescribeListenerAttributes",
+      "elasticloadbalancing:Set*"
     ]
     resources = ["*"]
   }
